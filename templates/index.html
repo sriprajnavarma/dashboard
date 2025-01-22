@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Entry</title>
+</head>
+<body>
+    <h1>Enter Patient Information</h1>
+    <form action="/add_patient" method="post">
+        <label for="appointment_date">Appointment Date:</label>
+        <input type="date" id="appointment_date" name="appointment_date" required><br><br>
+        
+        <label for="patient_id">Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id" required><br><br>
+        
+        <label>Select Age Group:</label>
+        <button type="button" onclick="document.getElementById('age').value='0-18'">0-18</button>
+        <button type="button" onclick="document.getElementById('age').value='19-35'">19-35</button>
+        <button type="button" onclick="document.getElementById('age').value='36-50'">36-50</button>
+        <button type="button" onclick="document.getElementById('age').value='51+'">51+</button>
+        <input type="hidden" id="age" name="age" required><br><br>
+        
+        <label>Select Gender:</label>
+        <button type="button" onclick="document.getElementById('gender').value='Male'">Male</button>
+        <button type="button" onclick="document.getElementById('gender').value='Female'">Female</button>
+        <input type="hidden" id="gender" name="gender" required><br><br>
+        
+        <label for="diagnosis">Diagnosis:</label>
+        <input type="text" id="diagnosis" name="diagnosis" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h2>Filter and View Dashboard</h2>
+    <form action="/dashboard" method="get">
+        <label for="filter_age_group">Filter by Age Group:</label>
+        <select id="filter_age_group" name="age_group">
+            <option value="all">All</option>
+            <option value="0-18">0-18</option>
+            <option value="19-35">19-35</option>
+            <option value="36-50">36-50</option>
+            <option value="51+">51+</option>
+        </select><br><br>
+        
+        <label for="filter_gender">Filter by Gender:</label>
+        <select id="filter_gender" name="gender">
+            <option value="all">All</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+        
+        <input type="submit" value="Filter and View Dashboard">
+    </form>
+</body>
+</html>
+

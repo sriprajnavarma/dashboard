@@ -1,0 +1,12 @@
+appointment_date,patient_id,age,gender,diagnosis,age_group
+2024-06-21,1,,Male,migraine,0-18
+2024-06-21,2,,Female,migraine,19-35
+2024-06-21,3,,Male,Back pain,36-50
+2024-06-21,4,,Male,Tonsils,0-18
+2024-06-21,5,,Female,acidity,36-50
+2024-06-23,6,,Female,orthotics,19-35
+2024-06-23,6,,Female,orthotics,36-50
+2024-06-22,7,,Male,orthotics,51+
+2024-06-22,7,,Male,orthotics,51+
+2024-06-22,7,,Male,Tonsils,0-18
+2025-01-17,90,,Female,asthma,0-18
